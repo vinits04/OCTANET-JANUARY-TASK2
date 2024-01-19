@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>T2-To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="todo-app" id="left-list">
+        <h2>MORE IMPORTANT TASKS <img src="ASSETS/icon.png" /></h2>
+        <div class="row">
+          <input type="text" id="left-input-box" placeholder="Add your tasks" />
+          <button onclick="addLeftTask()">Add</button>
+        </div>
+        <ul id="left-list-container">
+         
+        </ul>
+      </div>
+
+      <div class="todo-app" id="Right-list">
+        <h2>LESS IMPORTANT TASKS <img src="ASSETS/icon.png" /></h2>
+        <div class="row">
+          <input
+            type="text"
+            id="Right-input-box"
+            placeholder="Add your tasks"
+          />
+          <button onclick="addRightTask()">Add</button>
+        </div>
+        <ul id="Right-list-container">
+        
+        </ul>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
